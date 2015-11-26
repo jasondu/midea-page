@@ -16,7 +16,7 @@ body, html {
     max-height: 100%;
     color: #4b180b;
     overflow: hidden;
-    background: url(../img/bg.jpg) no-repeat #ebcf88;
+    background: url(../img/bg.jpg) no-repeat #052C00;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
@@ -83,10 +83,98 @@ body, html {
 header {
     height: 22%;
     box-sizing: border-box;
-    padding: 20px 10px 10px;
+    padding: 20px;
 }
 header img {
     width: 100%;
+}
+.sub-header {
+    box-sizing: border-box;
+    height: 20%;
+    padding: 0 20px;
+}
+.product-egg {
+    height: 40%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.product-egg .caitiao {
+    z-index: 200;
+    padding-top: 10px;
+    width: 100%;
+    visibility: visible;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+.product-egg .product {
+    position: absolute;
+    height: 40%;
+    bottom: 15%;
+    left: 20%;
+}
+.product-egg .egg {
+    position: absolute;
+    height: 30%;
+    bottom: 15%;
+    left: 40%;
+}
+.text {
+    float: left;
+    margin: 0;
+    padding-left: 8px;
+    height: 35px;
+    line-height: 35px;
+    color: black;
+}
+.progress {
+    float: left;
+    position: relative;
+    height: 35px;
+    width: 60%;
+    background-color: #c4c601;
+    border-radius: 35px;
+    padding: 4px;
+    box-sizing: border-box;
+    -webkit-box-shadow:0 0 25px #000 inset;
+    box-shadow:0 0 25px #000 inset;
+}
+.progress .progress-con {
+    height: 100%;
+    width: 100%;
+    border-radius: 99px;
+    background-color: #f2f308;
+    background-image: url('../img/progress-bg.png');
+    background-repeat: no-repeat;
+}
+.p-t-10 {
+    padding-top: 10px;
+}
+ul.heart {
+    float: left;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;
+    width: 60%;
+    display: -webkit-box;
+    box-sizing: border-box;
+    height: 35px;
+}
+ul.heart li {
+    height: 100%;
+    display: -webkit-box;
+    float: none;
+    -webkit-box-flex: 1;
+    width: 0;
+    background-image: url('../img/em_heart.png');
+    background-size: 100% 100%;
+    margin: 5px;
+}
+ul.heart li.active {
+    background-image: url('../img/heart.png');
 }
 section {
     height: 53%;
@@ -115,6 +203,20 @@ footer {
     color: #e5f39f;
     margin: 0;
     line-height: 1.2;
+}
+.two-btn {
+    display: -webkit-box;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 10px;
+}
+.two-btn span {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    margin: 0 20px;
+}
+.two-btn span img {
+    width: 100%;
 }
 
 .swiper-container {
