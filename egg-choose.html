@@ -21,6 +21,13 @@
         <img class="bg" src="img/peizhi-bg.png" alt=""/>
     </div>
 </div>
+<div id="get-egg" class="fix-label" style="display: none;">
+    <div class="peizhi">
+        <span class="icon-light anim-rotate"></span>
+        <img class="egg" src="img/egg/03.png" alt=""/>
+        <img class="bg" src="img/lingqu-bg.png" alt=""/>
+    </div>
+</div>
 <!--领养蛋蛋弹出框-->
 <div class="fix-label" style="display: none;">
     <div class="peizhi daodao">
@@ -30,21 +37,19 @@
     <span class="btn"><img src="img/dandan-btn.png" alt=""/></span>
 </div>
 <div class="page">
+    <div class="egg-light"><img src="img/chose-egg-light.png" alt=""/></div>
     <header>
-        <img src="img/title-01.png" alt=""/>
+        <img src="img/title-03.png" alt=""/>
     </header>
     <section>
-        <div class="swiper-container" id="product-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/product-01.png" alt=""/>
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+        <div id="wrapper">
+            <div class="carousel">
+                <div class="panel panel-0"><img src="img/egg/02.png" alt=""/></div>
+                <div class="panel panel-1"><img src="img/egg/02.png" alt=""/></div>
+                <div class="panel panel-2"><img src="img/egg/02.png" alt=""/></div>
+                <div class="panel panel-3"><img src="img/egg/02.png" alt=""/></div>
+                <div class="panel panel-4"><img src="img/egg/02.png" alt=""/></div>
             </div>
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </section>
     <footer>
@@ -58,5 +63,6 @@
 </div>
 </body>
 </html>
+<script src="bower_components/zepto/zepto.min.js"></script>
 <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
 <script src="js/app.js"></script>
