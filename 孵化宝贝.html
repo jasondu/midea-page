@@ -10,32 +10,27 @@
     <!-- 启用 WebApp时可用:隐藏状态栏 -->
     <title></title>
     <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-<!--正在配置弹出框-->
-<div class="fix-label">
-    <img class="before yaoyao anim-shake" src="img/yaoyao.png" alt=""/>
-    <img class="before yaoyao-text" src="img/daodao-text-01.png" alt=""/>
-
-    <img style="display: none;" class="after dianyuan" src="img/dianyuan.png" alt=""/>
-    <img style="display: none;" class="after yaoyao-text" src="img/dandan-text-02.png" alt=""/>
-</div>
-<div class="page">
-    <header>
-        <h1 class="title" style="color: #58ff22;">电量摇一摇</h1>
+<div class="share-page">
+    <header style="padding-top: 40px;box-sizing: border-box;">
+        <div class="dianlian">
+            <div class="dianlian-con"></div>
+            <div class="dianlian-bg"></div>
+        </div>
     </header>
     <section>
-        <ul class="bowen">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <img class="daodao-img" src="img/daodao01.png" alt=""/>
+        <img class="egg" src="img/egg/03.png" alt=""/>
+        <img class="dianxian" src="img/ele.png" alt=""/>
     </section>
+    <footer>
+        <span data-href="yaoyiyao.html" class="btn" style="bottom: 20%;padding: 0 20%;"><img src="img/btn-03.png" alt=""/></span>
+        <span class="btn" style="padding: 0 20%;"><img src="img/btn-04.png" alt=""/></span>
+    </footer>
 </div>
 </body>
 </html>
 <script src="bower_components/zepto/zepto.min.js"></script>
-<script src="js/shake.js"></script>
 <script src="js/app.js"></script>

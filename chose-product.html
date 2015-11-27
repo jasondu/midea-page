@@ -16,10 +16,10 @@
 <body>
 <!--正在配置弹出框-->
 <div id="peizhi" class="fix-label" style="display: none;">
-    <div class="peizhi">
+    <div class="peizhi" id="get-product">
         <span class="icon-light anim-rotate"></span>
         <img class="bg" src="img/peizhi-bg.png" alt=""/>
-        <img class="egg" src="img/product/01.png" alt=""/>
+        <img class="product" src="img/product/01.png" alt=""/>
     </div>
 </div>
 <!--领养蛋蛋弹出框-->
@@ -37,30 +37,120 @@
     <section>
         <div class="swiper-container" id="product-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/product/01.png" alt=""/>
+                <div class="swiper-slide" id="product_0" data-id="0">
+                    <img data-src="img/product/01.png" alt="" class="swiper-lazy"/>
+                    <div class="swiper-lazy-preloader"></div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/product/02.png" alt=""/>
+                <div class="swiper-slide" id="product_1" data-id="1">
+                    <img data-src="img/product/02.png" alt="" class="swiper-lazy"/>
+                    <div class="swiper-lazy-preloader"></div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/product/03.png" alt=""/>
+                <div class="swiper-slide" id="product_2" data-id="2">
+                    <img data-src="img/product/03.png" alt="" class="swiper-lazy"/>
+                    <div class="swiper-lazy-preloader"></div>
                 </div>
             </div>
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+
         </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </section>
     <footer>
-        <div class="text-label">
-            <h1>款式：暖风机NDK20-16E2W</h1>
-            <p>耗   电：100点</p>
-            <p>保   温：90点</p>
-            <p>孵化时间：1天</p>
+        <div class="text-label" id="product-text-con">
+
         </div>
     </footer>
 </div>
+<script type="text/html" id="product-text-0">
+    <h1>款式：暖风机NDK20-16E2W</h1>
+    <div class="product-text">
+        <span class="f-l">耗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电：100点</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+    <div class="product-text">
+        <span class="f-l">保&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;温：90点</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+    <div class="product-text">
+        <span class="f-l">孵化时间：1天</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+</script>
+<script type="text/html" id="product-text-1">
+    <h1>款式：暖风机NDK20-16E2W</h1>
+    <div class="product-text">
+        <span class="f-l">耗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电：200点</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+    <div class="product-text">
+        <span class="f-l">保&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;温：190点</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+    <div class="product-text">
+        <span class="f-l">孵化时间：3天</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+</script>
+<script type="text/html" id="product-text-2">
+    <h1>款式：暖风机NDK20-16E2W</h1>
+    <div class="product-text">
+        <span class="f-l">耗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电：200点</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+    <div class="product-text">
+        <span class="f-l">保&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;温：190点</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+    <div class="product-text">
+        <span class="f-l">孵化时间：5天</span>
+        <ul class="star-label f-r">
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+            <li><img src="img/small-star.png" alt=""/></li>
+        </ul>
+    </div>
+</script>
 </body>
 </html>
 <script src="bower_components/zepto/zepto.min.js"></script>
