@@ -4,6 +4,7 @@
 
 $(function () {
     var CONFIG = {
+        cdnUrl: '../',
         eggText: {
             '0': {
                 name: '艾艾',
@@ -118,12 +119,12 @@ $(function () {
 
 
     var spritePic = document.getElementById('sprite') != null && new mo.Film(document.getElementById('sprite'),{
-        resource : '../img/egg-animate03.png',
+        resource : CONFIG.cdnUrl + 'img/egg-animate'+document.getElementById('sprite').dataset.id+'.png',
         totalFrame : 6,
         spriteDirect: 1
     });
 
-    document.getElementById('sprite') != null && spritePic.play(100);
+    document.getElementById('sprite') != null && spritePic.play(200);
 
     //摇一摇
     var myShakeEvent = new Shake({

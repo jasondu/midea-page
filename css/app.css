@@ -324,6 +324,7 @@ ul, li {
     height: 45%;
     bottom: 8%;
     left: 4%;
+    z-index: 999;
 }
 .product-egg .egg img {
     position: absolute;
