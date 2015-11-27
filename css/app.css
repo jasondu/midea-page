@@ -156,10 +156,10 @@ ul, li {
     text-overflow: ellipsis;
 }
 .page.fix {
-    -webkit-filter: blur(10px); /* Chrome, Opera */
-    -moz-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
+    -webkit-filter: blur(3px); /* Chrome, Opera */
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
 }
 .fix-label {
     z-index: 999;
