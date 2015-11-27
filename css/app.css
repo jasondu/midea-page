@@ -705,6 +705,7 @@ ul.heart li.active {
     }
 @media screen and (min-width: 360px) and (max-width: 374px) {
     #wrapper {-webkit-transform: scale(.8)}
+    .text-label, .egg-label {font-size: 10px}
     }
 @media screen and (min-width: 375px) and (max-width: 383px) {
     #wrapper {-webkit-transform: scale(.9)}
