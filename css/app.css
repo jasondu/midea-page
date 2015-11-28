@@ -47,6 +47,10 @@ ul, li {
 .game-page {
     background-image: url(../img/game.jpg);
 }
+.page2 {
+    background-image: url(../img/bg2.jpg);
+    overflow: auto;
+}
 .list-page {
     background-color: #28780f;
 }
@@ -55,6 +59,17 @@ ul, li {
     margin: 0 auto;
     margin-top: 15px;
     display: block;
+}
+.ui-col img {
+    width: 100%;
+}
+.ui-col {
+    position: relative;
+}
+.page2 .btn {
+    width: 90%;
+    left: 22%;
+    top: 37%;
 }
 .share-page {
     background-image: url(../img/share-bg.jpg);

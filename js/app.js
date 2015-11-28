@@ -95,12 +95,18 @@ $(function () {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             onSlideChangeEnd: function(swiper){
-                var current = $('#product_'+(swiper.activeIndex - 1));
+                var index = swiper.activeIndex;
+                if (swiper.activeIndex === 0) index = 3;
+                if (swiper.activeIndex === 4) index = 1;
+                var current = $('#product_'+(index - 1));
                 var html = $('#product-text-' + current.data('id')).html();
                 $('#product-text-con').html(html);
             },
             onTap: function(swiper){
-                var current = $('#product_'+(swiper.activeIndex - 1));
+                var index = swiper.activeIndex;
+                if (swiper.activeIndex === 0) index = 3;
+                if (swiper.activeIndex === 4) index = 1;
+                var current = $('#product_'+(index - 1));
                 console.log('当前选择商品：'+current.data('id'));
                 $('#peizhi').find('.product').attr('src', current.find('img').attr('src'));
                 $('#peizhi').show();
