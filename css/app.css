@@ -214,10 +214,10 @@ ul, li {
 }
 .egg-mask {
     position: absolute;
-    top: -0.8em;
+    top: -0.7em;
     left: 49%;
     -webkit-transform: translateX(-50%);
-    width: 13em;
+    width: 10em;
 }
 .fix-label .daodao {
     top: 35%;
