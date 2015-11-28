@@ -13,28 +13,28 @@ $(function () {
                 text3: '不同的宠物蛋供选择，成功孵化出蛋的可以获得奖励！'
             },
             '1': {
-                name: '艾艾',
-                text1: '',
-                text2: '',
-                text3: ''
+                name: '嗷嗷',
+                text1: '孵化前属性：热情，固执',
+                text2: '孵化后属性：忠诚，认真',
+                text3: '不同的宠物蛋供选择，成功孵化出蛋的可以获得奖励！'
             },
             '2': {
-                name: '艾艾',
-                text1: '',
-                text2: '',
-                text3: ''
+                name: '伊伊',
+                text1: '孵化前属性：低调，害羞',
+                text2: '孵化后属性：优雅，自信',
+                text3: '不同的宠物蛋供选择，成功孵化出蛋的可以获得奖励！'
             },
             '3': {
-                name: '艾艾',
-                text1: '',
-                text2: '',
-                text3: ''
+                name: '喵喵',
+                text1: '孵化前属性：高冷，傲娇',
+                text2: '孵化后属性：粘人，乖巧',
+                text3: '不同的宠物蛋供选择，成功孵化出蛋的可以获得奖励！'
             },
             '4': {
-                name: '艾艾',
-                text1: '',
-                text2: '',
-                text3: ''
+                name: '嘟嘟',
+                text1: '孵化前属性：天真，傻气，胖',
+                text2: '孵化后属性：勇敢，灵活',
+                text3: '不同的宠物蛋供选择，成功孵化出蛋的可以获得奖励！'
             }
         }
     };
@@ -42,8 +42,8 @@ $(function () {
     $panels = $('.panel');
     var $page = $('.page'),
         $getEggFix = $('#get-egg');
-    $panels.on('touchend', function (e) {
-        var $current = $(e.currentTarget);
+    $('.touch-label').on('touchend', function (e) {
+        var $current = $(e.currentTarget).parent('.panel');
         if ($current.hasClass('panel-0')) {
             $getEggFix.find('.egg').attr('src', $current.find('img').attr('src'));
             $getEggFix.show();
