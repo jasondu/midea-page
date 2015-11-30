@@ -721,29 +721,29 @@ ul.heart li.active {
 
 @media screen and (max-width: 319px) {
     #wrapper {-webkit-transform: scale(.6)}
-    .text-label, .egg-label {font-size: 6px}
+    .text-label{font-size: 6px}
     }
 @media screen and (min-width: 320px) and (max-width: 359px) {
     #wrapper {-webkit-transform: scale(.8)}
-    .text-label, .egg-label {font-size: 8px}
+    .text-label{font-size: 8px}
     }
 @media screen and (min-width: 360px) and (max-width: 374px) {
     #wrapper {-webkit-transform: scale(.8)}
-    .text-label, .egg-label {font-size: 10px}
+    .text-label{font-size: 10px}
     }
 @media screen and (min-width: 375px) and (max-width: 383px) {
     #wrapper {-webkit-transform: scale(.9)}
-    .text-label, .egg-label {font-size: 12px}
+    .text-label{font-size: 12px}
     }
 @media screen and (min-width: 384px) and (max-width: 399px) {
     #wrapper {-webkit-transform: scale(.9)}
-    .text-label, .egg-label {font-size: 12px}
+    .text-label{font-size: 12px}
     }
 @media screen and (min-width: 400px) and (max-width: 413px) {
     #wrapper {-webkit-transform: scale(1)}
-    .text-label, .egg-label {font-size: 12px}
+    .text-label{font-size: 12px}
     }
 @media screen and (min-width: 414px) {
     #wrapper {-webkit-transform: scale(1)}
-    .text-label, .egg-label {font-size: 15px}
+    .text-label{font-size: 15px}
     }
