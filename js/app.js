@@ -109,7 +109,7 @@ $(function () {
                 var current = $('#product_'+(index - 1));
                 console.log('当前选择商品：'+current.data('id'));
                 $('#peizhi').find('.product').attr('src', current.find('img').attr('src'));
-                $('#peizhi').show();
+                $('#peizhi').show().find('#get-product').data('id', current.data('id'));
                 $page.addClass('fix');
             }
         });
@@ -117,6 +117,9 @@ $(function () {
 
     $('#get-product').on('touchend', function (e) {
         e.stopPropagation();
+        // TODO 孵化器ID
+        var id = $(e.currentTarget).data('id')
+        alert(id);
         location.href = '我的宝贝-电量高.html';
     });
     $('[data-href]').on('touchend', function (e) {
