@@ -14,6 +14,14 @@
 </head>
 <body>
 <div class="game-page">
+    <span class="btn" id="btn" style="left: -15%"><img src="img/btn-11.png" alt=""/></span>
 </div>
 </body>
 </html>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('touchend', function () {
+        event.stopPropagation();
+        location.href = 'index.html';
+    })
+</script>
