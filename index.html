@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-<div class="page" onclick="javascript:location.href='egg-choose.html'">
+<div class="page" id="page">
     <header>
         <img class="shake animated" src="img/title-04.png" alt=""/>
         <img src="img/caitiao-02.png" alt="" class="caitiao caitiao-02"/>
@@ -24,9 +24,20 @@
         <img class="caitiao caitiao-index" src="img/caidai-index.png" alt=""/>
     </section>
     <footer>
-        <span class="btn"><img src="img/btn-12.png" alt=""/></span>
+        <span class="btn" id="btn"><img src="img/btn-12.png" alt=""/></span>
         <img class="logo right" src="img/logo.png" alt=""/>
     </footer>
 </div>
 </body>
 </html>
+<script>
+    var btn = document.getElementById('btn');
+    var page = document.getElementById('page');
+    page.addEventListener('touchend', function () {
+        location.href = 'egg-choose.html';
+    });
+    btn.addEventListener('touchend', function () {
+        event.stopPropagation();
+        location.href = '游戏规则.html';
+    })
+</script>
